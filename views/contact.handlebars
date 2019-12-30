@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Gayathri|Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="container2">
+        <div class="nav">
+            {{!-- <span class="open-slide">
+                <a href="#" onclick="openSlideMenu()">
+                    <svg width="30" height="30">
+                        <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                        <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                        <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </span> --}}
+            <ul class="nav2">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Works</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        {{!-- <div class="box">
+            <span></span>
+        </div> --}}
+        <div class="intro">
+            <h2 class="name">BIPLAB PAUL</h2>
+            <h5 class="developer">FRONT-END DEVELOPER | BEGINNER NODE DEVELOPER </h5>
+        </div>
+    </div>
+
+    {{!-- <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a class="list-hover" href="#services">Services</a>
+        <a class="list-hover" href="#about">About</a>
+        <a class="list-hover" href="#work">Works</a>
+        <a class="list-hover" href="#contact">Contact Us</a>
+    </div> --}}
+
+    <div id="services" class="container">
+        <h3><span> Our </span>Services</h3>
+        <div class="feature" data-aos="fade-out">
+            <div class="card">
+                <img src="../public/img/css2.jpg" alt="">
+                <h4>CSS Designs</h4>
+            </div>
+
+            <div class="card">
+                <img src="../public/img/attactive2.jpg" alt="">
+                <h4>Attactive</h4>
+            </div>
+
+            <div class="card">
+                <img src="../public/img/responsive.jpg" alt="">
+                <h4>Responsive</h4>
+            </div>
+
+            <div class="card">
+                <img src="../public/img/node3.jpg" alt="">
+                <h4>Node.js</h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="aboutme" >
+        <!-- <img src="./image/mypic2.jpg" alt=""> -->
+        <div class="description" data-aos="fade-right">
+            <h3><span> About </span>Me</h3>
+            <p>Lorem ipsum dolor sit amet Lorem. adipisicing elit.</p>
+            <p>Sapiente quibusdam neque consequatur perspiciatis magnam.</p>
+            <p>Lorem ipsum dolor sit amet Lorem adipisicing elit.</p>
+            <p>Sapiente quibusdam neque consequatur perspiciatis magnam.</p>    
+        </div>
+
+        <ul class="skills" data-aos="fade-right">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>NODE.JS</li>
+            <li>MATERIALIZE</li>
+            <li>BOOTSTRAP</li>
+        </ul>
+    </div>
+
+    <div id="work" class="work">
+        <h3><span> My </span>Work</h3>
+        <div class="workpics">
+            <div class="card" data-aos="flip-left">
+                <img src="../public/img/site1.jpg" alt="">
+            </div>
+            <div class="card" data-aos="flip-right">
+                <img src="../public/img/site2.jpg" alt="">
+            </div>
+            <div class="card" data-aos="flip-left">
+                <img src="../public/img/site3.jpg" alt="">
+            </div>
+        </div>
+        <a href="#" class="btn">SEE MORE</a>
+    </div>
+
+    <div id="resume" class="resume">
+        <div class="see">
+            <h1>Like What You See?</h1>
+            <h4>Check out my resume to learn more.</h4>
+        </div>
+        <a class="btn">VIEW RESUME</a>
+    </div>
+
+    <div id="contact" class="contact">
+        <div class="mail">
+            <h2>Feel free to reach out. I'd love</h2> 
+            <h2>to hear from you!</h2>
+            <ul>
+                <li>bittupaul1998@gmail.com</li>
+                <li>9570015320</li>
+            </ul>
+        </div>
+        <div class="getintouch">
+            <h1>Get In <span>Touch</span></h1>
+            <form method="POST" action="send">
+                <input type="text" name="name" placeholder="Enter your name" required> 
+                <input type="email" name="email" placeholder="Enter your email" required> <br> 
+                <input type="message" name="msg" placeholder="Tell me how i can help you" required><br>
+                <button class="btn" type="submit">SUBMIT</button> 
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="foot">
+        <h2>BIPLAB PAUL</h2>
+        <h4>Copyright 2019. ALL rights reserved</h4>
+    </div>
+    
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
+    <script>
+      AOS.init({
+        //   offset:400,
+          duration:1000
+      });
+
+      function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+        }
+
+      function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+        }
+    </script>
+</body>
+</html>
